@@ -60,7 +60,7 @@ public class BookEntity implements Serializable {
 	Date endDate;
 
 	@NotNull
-	@Column(name = "housei_d")
+	@Column(name = "house_id")
 	String houseId;
 
 	@Column(name = "discount_code")

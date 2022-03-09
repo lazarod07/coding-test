@@ -3,6 +3,7 @@
  */
 package com.coding.test.business.http.controller;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -76,7 +77,7 @@ public class BookController {
 
 				ResponseErrorDto responseError = new ResponseErrorDto();
 
-//				responseError.setError("Conflict");
+				responseError.setError(Arrays.asList("Conflict"));
 				responseError.setStatusCode(409);
 				responseError.setMessage("invalid discount");
 				return new ResponseEntity<ResponseErrorDto>(responseError, HttpStatus.CONFLICT);
